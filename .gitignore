@@ -1,0 +1,9 @@
+*.log
+*.zip
+*.mp4
+*.ppt*
+.env
+node*/
+dist/
+TypeScript-Lessons-Lesson-1*/
+
