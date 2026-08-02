@@ -1,5 +1,17 @@
-import average from './average'; 
+import getProductDescription from './getProductDescription';
 
-console.log('Середнє [10, 20, 30]:', average([10, 20, 30]));   // поверне 20
-console.log('Середнє порожнього масиву []:', average([]));     // поверне 0
-console.log('Середнє [5, 15]:', average([5, 15]));             // поверне 10
+const item1 = {
+  name: 'Кавоварка',
+  price: 2500,
+  isAvailable: true,
+};
+
+const item2 = {
+  name: 'Крісло геймерське',
+  price: 7200,
+  isAvailable: false,
+};
+
+console.log(getProductDescription(item1));
+
+console.log(getProductDescription(item2));
