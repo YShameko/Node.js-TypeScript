@@ -1,5 +1,3 @@
-import average from './average'; 
+import createTree from './createTree';
 
-console.log('Середнє [10, 20, 30]:', average([10, 20, 30]));   // поверне 20
-console.log('Середнє порожнього масиву []:', average([]));     // поверне 0
-console.log('Середнє [5, 15]:', average([5, 15]));             // поверне 10
+console.log(JSON.stringify(createTree(3), null, 2));
