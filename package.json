@@ -1,16 +1,16 @@
 {
-  "name": "hw-typescript",
+  "name": "notification-service",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "TypeScript Notification Service",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "@types/node": "^26.1.2",
-    "typescript": "^7.0.2"
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
   }
 }
