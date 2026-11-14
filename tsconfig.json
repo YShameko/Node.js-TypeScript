@@ -7,7 +7,7 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "target": "es6",
+    "target": "es2022",
     "module": "commonjs",
     "types": [],
     // For nodejs:
@@ -40,5 +40,11 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-  }
+  },
+  "include": ["src/**/*"],     // <--- Компілювати та перевіряти ТІЛЬКИ те, що всередині src/
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*-Lessons-Lesson-*/**"  // <--- Повністю ігнорувати папки з навчальними матеріалами
+  ]
 }
